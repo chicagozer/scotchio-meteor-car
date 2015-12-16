@@ -1,0 +1,27 @@
+<template name="ListDealers">
+    {{> searchBox }} 
+    {{> pagesNav}}  <!--Bottom navigation-->
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Code</th>
+        <th>Name</th>
+        <th>Agent Type</th>
+        <th>Schema Name</th>
+      </tr>
+    </thead>
+    <tbody>
+    {{> pages }}
+    </tbody>
+  </table>
+</template>
+
+<template name="DealerItem">
+                        <tr>
+                                <td>{{DEALER_CODE}}</td>
+                                <td>{{DEALER_NAME}}</td>
+                                <td>{{AGENT_TYPE}}</td>
+                                <td>{{SCHEMA_NAME}}</td>
+								<a href="{{pathFor 'editDealer' _id=this._id._str}}"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                        </tr>
+</template>

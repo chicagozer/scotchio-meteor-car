@@ -12,24 +12,24 @@ Router.route('/', {
 });
 
 
-Router.route('/cars/create', {
-  name: 'createCar',
-  controller: 'CarsController',
+Router.route('/dealer/create', {
+  name: 'createDealer',
+  controller: 'DealersController',
   action: 'create',
   where: 'client'
 });
 
 
-Router.route('/cars', {
-  name: 'carsList',
-  controller: 'CarsController',
+Router.route('/dealers', {
+  name: 'dealersList',
+  controller: 'DealersController',
   action: 'list',
   where: 'client'
 });
 
-Router.route('/cars/:_id', {
-  name: 'editCar',
-  controller: 'CarsController',
+Router.route('/dealer/:_id', {
+  name: 'editDealer',
+  controller: 'DealersController',
   action: 'edit',
   where: 'client'
 });

@@ -5,6 +5,6 @@
  */
 
 
-Meteor.publish('cars', function (/* args */) {
-  return Cars.find();
+Meteor.publish('dealers', function (/* args */) {
+  return Dealers.find();
 });

@@ -1,23 +1,23 @@
 /*****************************************************************************/
-/* CreateCar: Event Handlers */
+/* CreateDealer: Event Handlers */
 /*****************************************************************************/
-Template.CreateCar.events({
+Template.CreateDealer.events({
 });
 
 /*****************************************************************************/
-/* CreateCar: Helpers */
+/* CreateDealer: Helpers */
 /*****************************************************************************/
-Template.CreateCar.helpers({
+Template.CreateDealer.helpers({
 });
 
 /*****************************************************************************/
-/* CreateCar: Lifecycle Hooks */
+/* CreateDealer: Lifecycle Hooks */
 /*****************************************************************************/
-Template.CreateCar.created = function () {
+Template.CreateDealer.created = function () {
 };
 
-Template.CreateCar.rendered = function () {
+Template.CreateDealer.rendered = function () {
 };
 
-Template.CreateCar.destroyed = function () {
+Template.CreateDealer.destroyed = function () {
 };

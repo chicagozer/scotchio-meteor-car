@@ -1,32 +1,32 @@
 /*****************************************************************************/
-/* EditCar: Event Handlers */
+/* EditDealer: Event Handlers */
 /*****************************************************************************/
-Template.EditCar.events({
+Template.EditDealer.events({
 });
 
 /*****************************************************************************/
-/* EditCar: Helpers */
+/* EditDealer: Helpers */
 /*****************************************************************************/
-Template.EditCar.helpers({
+Template.EditDealer.helpers({
   beforeRemove: function () {
       return function (collection, id) {
         var doc = collection.findOne(id);
-        if (confirm('Really delete car: "' + doc.brand + " " + doc.model + '"?')) {
+        if (confirm('Really delete dealer: "' + doc.brand + " " + doc.model + '"?')) {
           this.remove();
-          Router.go('carsList');
+          Router.go('dealersList');
         }
       };
     }
 });
 
 /*****************************************************************************/
-/* EditCar: Lifecycle Hooks */
+/* EditDealer: Lifecycle Hooks */
 /*****************************************************************************/
-Template.EditCar.created = function () {
+Template.EditDealer.created = function () {
 };
 
-Template.EditCar.rendered = function () {
+Template.EditDealer.rendered = function () {
 };
 
-Template.EditCar.destroyed = function () {
+Template.EditDealer.destroyed = function () {
 };
